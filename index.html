@@ -1,25 +1,4 @@
-<?php
-  session_start();
 
-  require './paginas/conexion.php';
-  $categCom='Comida';
-  $categDep='Deporte';
-  $categJoy='Joyeria';
-  $categModa='Moda';
-
-  if (isset($_SESSION['user_id'])) {
-    $records = $conn->prepare('SELECT idclient, mailclient,contraclient,nomclient FROM clientes WHERE idclient = :idclient');
-    $records->bindParam(':idclient', $_SESSION['user_id']);
-    $records->execute();
-    $results = $records->fetch(PDO::FETCH_ASSOC);
-
-    $user = null;
-
-    if (count($results) > 0) {
-      $user = $results;
-    }
-  }
-?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -60,13 +39,13 @@
                 <ul id="navul">
                     <span class="material-symbols-outlined" id="menu_icon">menu</span>
                     
-                    <?php if(!empty($user)):?>
+                    
                     <li><a href="./paginas/logout.php">Cerrar Sesión</a></li>
-                    <script> alert('Bienvenido <?php echo $results['nomclient'];?>')</script>
-                    <?php else: ?>
+                    
+                   
                     <li><a href="./paginas/insesion2.php">Iniciar Sesión</a></li>
                     <li><a href="./paginas/signup2.php">Registrate</a></li>
-                    <?php endif; ?>
+                    
                     <li><a href="./paginas/bazares.php">Articulos</a></li>
                     <li><a href="./paginas/blog.php">Sobre nosotros</a></li>
                 </ul>
