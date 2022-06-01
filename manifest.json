@@ -1,0 +1,60 @@
+{
+    "name": "Bazarro",
+    "short_name": "Bazarro",
+    "description": "Bazarro un lugar para conocer bazares",
+    "background_color": "#2B2B2B",
+    "theme_color": "#F0DB4F",
+    "orientation": "portrait",
+    "display": "standalone",
+    "start_url": "./?utm_source=web_app_manifest",
+    "scope": "./",
+    "lang": "es-MX",
+    "icons":[
+        {
+          "src": "./imagenes/Iconos/1024px.jpeg",
+          "sizes": "1024x1024",
+          "type": "image/png"
+        },
+        {
+          "src": "./imagenes/Iconos/512px.jpeg",
+          "sizes": "512x512",
+          "type": "image/png"
+        },
+        {
+          "src": "./imagenes/Iconos/384px.jpeg",
+          "sizes": "384x384",
+          "type": "image/png"
+        },
+        {
+          "src": "./imagenes/Iconos/266px.jpeg",
+          "sizes": "256x256",
+          "type": "image/png"
+        },
+        {
+          "src": "./imagenes/Iconos/192px.jpeg",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "src": "./imagenes/Iconos/128px.jpeg",
+          "sizes": "128x128",
+          "type": "image/png"
+        },
+        {
+          "src": "./imagenes/Iconos/96px.jpeg",
+          "sizes": "96x96",
+          "type": "image/png"
+        },
+        {
+          "src": "./imagenes/Iconos/64px.jpeg",
+          "sizes": "64x64",
+          "type": "image/png"
+        },
+        {
+          "src": "./imagenes/Iconos/32px.jpeg",
+          "sizes": "32x32",
+          "type": "image/png"
+        }
+       
+      ]
+    }
