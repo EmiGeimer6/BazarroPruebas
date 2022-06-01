@@ -1,0 +1,222 @@
+@media screen and (max-width: 848px) {
+    /* front */
+
+    .front{
+        background-image: url("../imagenes/Banner33.png");
+    }
+
+    /* slider */
+
+    .slider{
+        height: fit-content;
+    }
+
+    .subtitulo1{
+        width: 50%;
+        font-size: 22px;
+    }
+    /* Banner */
+.banner{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+
+
+.banner h2{
+    
+    font-size: 50px;
+    justify-content: center;
+    
+}
+.categ {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    align-items: center;
+    place-content: center;
+    
+
+}
+
+.categ a{
+    background-color:#2B5D7E ;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 10px 10px;
+    font-size: 12px;
+
+}
+
+#tagcom{
+    display: flex;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5em;
+}
+#tagjoy{
+    display: flex;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5em;
+}
+
+/*Responsive css Barra de navegacion*/ 
+#brand{
+    padding: 0px;
+}
+#titulo{
+    width: 150px;
+}
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    flex-wrap: wrap;
+
+    margin-right:30px;
+    list-style: none;
+    
+    
+    font-family: 'Raleway', sans-serif;
+    flex-direction: row;
+}
+#menu_icon{
+    visibility: visible;
+    text-align: center;
+    user-select: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+
+    
+    
+}
+#navul{
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: black;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+    
+#navul>li{
+    visibility: hidden;
+    
+    position: relative;
+    background-color: transparent;
+    margin-top: 50px;
+    transition: all ease 0.5s;
+    top: 100px;
+    left: 50px;    
+}
+#navul>li>a{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    background-color: transparent;
+    color: transparent;
+ 
+    transition: all ease 0.5s;
+}
+#navul:hover{
+    width: 60px;
+
+}
+
+#navul:hover>li{
+    visibility: visible;
+    margin-top: 0px;
+    left: -100%; 
+    top: 10px;
+    background-color: #2B5D7E;
+    
+}
+#navul:hover>li>a{
+    background-color: #2B5D7E;
+    
+    color: rgb(255, 255, 255);
+    width: 100vw;
+    font-size: 16px;
+
+}
+#navul:hover>#menu_icon{
+    width: 60px;
+
+}
+/*Info en index responsive css*/
+.contenido > img{
+    transform: rotate(-90deg);
+}
+
+.contenido>div{
+   margin-left: 50px;
+   width: 60%;
+}
+.contenido a{
+    width: 200px;
+    margin-left: 0;
+}
+.contenido h2{
+    font-size: 20px;
+}
+/*Mapa Responsive*/
+.mapinfo{
+    flex-direction: column;
+}
+#ubi{
+    width: 80%;
+    height: 300px;
+}
+.mapinfo h2{
+    width: 80%;
+    font-size: 14px;
+}
+/*** Info Bazarro en blog ***/
+.sobre{
+    width: 70%;
+}
+.cont2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media screen and (max-width: 500px) {
+    .img{
+        max-width: 150px;
+        max-height: 150px;
+        
+    }
+    
+    .subtitulo1{
+        width: 90%;
+    }
+    .contenido h1{
+        font-size: 30px;
+    }
+
+    .contenido h2{
+        font-size: 17px;
+    }
+    .contenido a{
+        width: 200px;
+        margin-left: 10px;
+    }
+    
+}

@@ -1,0 +1,207 @@
+/*** Default Styles ***/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+      width: 100vw;
+      flex-wrap: wrap;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+  }
+  h1{
+      font-size: 40px;
+      font-family: 'Fjalla One', sans-serif;
+      color:rgb(0, 0, 0);
+      text-align: center;
+  }
+  h3{
+      font-size: 16px;
+  }
+
+  .Int{
+    display: flex;
+    background-color: #e6eceb ;
+    margin: 10px;
+    align-items: stretch;
+   justify-content: stretch;
+   padding:10px;
+   border-radius: 10px;
+   box-shadow: 10px 10px 20px rgb(187, 182, 182);
+   
+  }
+/*** Info Bazarro ***/
+  .sobre{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .cont2{
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px 20px 20px;
+  }
+  .cont2 img{
+    width: 200px;
+    height: 200px;
+  }
+  
+ 
+  
+
+  /*** Section Styles ***/
+  section {
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+            
+            align-items: center;
+            text-align: center;
+  }
+  section:nth-child(odd) {
+    background: #7bcfff;
+  }
+  section:nth-child(even) {
+    background: #ffffff;
+  }
+  
+  #heading {
+    width: 120px;
+    height: 10px;
+    background: #fff;
+    border-radius: 90px;
+    margin-top: 40px;
+  }
+  #Content{
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content:center;
+    flex-wrap: wrap;
+  }
+  p{
+    text-align: center;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    width: 80%;
+  }
+
+  .sobre{
+    width:50% ;
+    align-items: center;
+    margin: auto;
+    background-color:#e6eceb ;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgb(187, 182, 182);
+  }
+
+  
+  /* IMAGENES */
+  .img{
+      align-items: center;
+      border-radius: 500px;
+      margin-top: 20px;
+      height: 160px;
+      width: 160px;
+      object-fit: cover;
+      
+  }
+  #majo{
+    transform: rotate(-90deg);
+  }
+
+  /* Footer  */
+  hr{
+    width: 60%;
+}
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(31, 36, 61);
+    box-shadow: 0px -1px 40px black;
+    margin-top: 50px;
+}
+.pie-pagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 30px 0px;
+    
+}
+.pie-pagina .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+
+}
+.pie-pagina .grupo1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo1 .box h2{
+    color: white;
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+}
+.pie-pagina .grupo1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 25px;
+    text-align: left;
+    margin-left: 0px;
+}
+.pie-pagina .grupo1 .redsocial a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: rgb(45, 45, 109);
+    text-align: center;
+    transition: all 300ms ease;
+    margin-top: 25px;
+}
+.pie-pagina .grupo1 .redsocial a:hover{
+    color: rgb(122, 152, 218);
+}
+.pie-pagina .grupo2{
+    background-color:rgb(113, 113, 136) ;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+.pie-pagina .grupo2 small{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width:800px){
+ .pie-pagina .grupo1{
+     width:90%;
+     grid-template-columns: repeat(1,1fr);
+     grid-gap: 30px;
+     padding: 35px 0px;
+ }
+}
+
+
